@@ -1,0 +1,81 @@
+h2{
+    text-align: center;
+    color: yellowgreen;
+}
+table{
+    border: 2px solid black;
+    background-color:darkkhaki;
+}
+.ac{
+    background-color: brown;
+    color: cornsilk;
+    border-radius: 0.2em;
+    text-decoration: none;
+}
+.ac:hover{
+  cursor: pointer;
+  background-color: indianred;
+}
+.ad{
+  text-decoration: none;
+}
+.ad:hover{
+cursor: pointer;
+background-color: whitesmoke;
+}
+
+
+
+.aa{
+    
+    background-image: url(https://im.hunt.in/cg/hyderabad/City-Guide/Trains-to-bangalore.jpg);
+    padding: 250px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+h1{
+    color:red;
+    text-align: center;
+    background-color:darksalmon;
+}
+.img {
+    transition-duration: 0.4s;
+  }
+  
+  .img:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  .ab{
+     text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+  .ggg{
+  background-image: url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg);
+padding-bottom: 200px;
+background-repeat: no-repeat;
+background-size: cover;
+  }

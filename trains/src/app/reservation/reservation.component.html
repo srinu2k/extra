@@ -1,0 +1,149 @@
+<h1>Pakistan Railway Reservation System</h1>
+<ul>
+  <li><a class="img" routerLink="/user">Back</a></li>
+  <li style="float:right"><a class="img" routerLink="/home">Logout</a></li>
+</ul>
+
+<div class="a">
+<h3>Reservation Form</h3>
+<div class="container">
+    <form [formGroup]="bookSeats" (ngSubmit)="collectTicks()" >
+        <label >Name</label>
+        <input type="text" class="form-control" placeholder="Enter name" formControlName="name" >
+        <div *ngIf="bookSeats.controls.name.touched && bookSeats.controls.name.errors" class="text-danger">
+            Please Enter your name
+        </div> 
+
+        <label >Email</label>
+        <input type="email" class="form-control" placeholder="Email" formControlName="email" required>
+        <div *ngIf="bookSeats.controls.email.touched && bookSeats.controls.email.errors" class="text-danger">
+         <div *ngIf=" bookSeats.controls.email.errors.required" > Please enter valid Email</div> 
+         <div *ngIf=" bookSeats.controls.email.errors.email"> Email must be valid Email address</div>
+        </div> 
+        
+
+        <label >Age</label>
+        <input type="number"  class="form-control" placeholder="Enter age" formControlName="age" >
+        <div *ngIf="bookSeats.controls.age.touched && bookSeats.controls.age.errors" class="text-danger">
+            Please enter your age
+        </div> 
+ 
+        <label >Gender</label><br>
+        <input id="male" type="radio" class="custom-control-input" name="gender"     formControlName="gender" value="male" checked>
+        <label class="custom-control-label" for="male">Male</label>  
+        <br>       
+        <input id="female" type="radio" class="custom-control-input" name="gender" formControlName="gender" value="female">
+        <label class="custom-control-label" for="female">Female</label>     
+        <br>
+        <label >Address</label>
+        <input type="text" class="form-control" placeholder="Address" formControlName="address" >
+        <div *ngIf="bookSeats.controls.address.touched && bookSeats.controls.address.errors" class="text-danger">
+            Please Enter your address
+        </div> 
+        <label >Credit no</label>
+        <input type="number" class="form-control" placeholder="Credit number" formControlName="credit" >
+        <div *ngIf="bookSeats.controls.credit.touched && bookSeats.controls.credit.errors" class="text-danger">
+            Please Enter your credit number
+        </div> 
+        <label >Start Station</label>
+        <select class="form-control" (click)="search()" [(ngModel)]="text" placeholder="From" formControlName="startStation" >
+           <option>select</option>
+            <option *ngFor="let trai of trains">
+                {{trai.from}}
+            </option>
+        </select>
+        <div *ngIf="bookSeats.controls.startStation.touched && bookSeats.controls.startStation.errors" class="text-danger">
+            Please select the station
+        </div> 
+        <br>
+        <label >Destination</label>
+        <select type="select" (click)="search1()"  [(ngModel)]="text1" class="form-control" placeholder="To" formControlName="endStation" >
+            <option>select</option>
+            <option *ngFor="let trai of trains">
+                {{trai.to}}
+            </option>
+        </select>
+        <div *ngIf="bookSeats.controls.endStation.touched && bookSeats.controls.endStation.errors" class="text-danger">
+            Please select the station
+        </div> 
+        <details>
+            <summary>Fare</summary>
+        <p *ngFor="let trai of trains">
+            Fare : {{trai.fare}}
+        </p>
+    </details>
+
+
+
+    <div class="card-details">
+        <p>Pay using Credit or Debit card</p>
+  
+        <div class="card-number">
+          <label> Card Number </label>
+          <br>
+          <input
+            type="text"
+            class="card-number-field"
+            placeholder="###-###-###"/>
+        </div>
+        <div class="date-number">
+          <label> Expiry Date </label>
+          <br>
+          <input type="text" class="date-number-field" 
+                 placeholder="DD-MM-YY" />
+        </div>
+  
+        <div class="cvv-number">
+          <label> CVV number </label>
+          <br>
+          <input type="text" class="cvv-number-field" 
+                 placeholder="xxx" />
+        </div>
+        <div class="nameholder-number">
+          <label> Card Holder name </label>
+          <br>
+          <input
+            type="text"
+            class="card-name-field"
+            placeholder="Enter your Name"/>
+        </div>
+        <button type="button" 
+                class="submit-now-btn">
+          Pay
+        </button>
+      </div>
+
+
+
+
+
+        <label >Date</label>
+        <input type="date" class="form-control"  formControlName="date" >
+        <div *ngIf="bookSeats.controls.date.touched && bookSeats.controls.date.errors" class="text-danger">
+            Please select the date
+        </div> 
+        <label >Bankname</label>
+        <select type="select" class="form-control" placeholder="Bank name" formControlName="bankname" >
+       <option>Kotak Bank</option>
+       <option>Axis Bank</option>
+       <option>ICICI Bank</option>
+       <option>SBI</option>
+        </select>
+            <div *ngIf="bookSeats.controls.bankname.touched && bookSeats.controls.bankname.errors" class="text-danger">
+            Please Enter Bank Details
+        </div> 
+        <label >Berth</label>
+        <select type="select" class="form-control" placeholder="Berth" formControlName="berth" >
+            <option>Sleeper</option>
+            <option>General</option>
+            </select>
+        <div *ngIf="bookSeats.controls.berth.touched && bookSeats.controls.berth.errors" class="text-danger">
+            Please select the berth
+        </div> 
+        <div class="submit-button1">
+            <button class="button-1" type="submit" >Submit</button>
+        </div>
+    </form>
+</div>
+</div>
+    

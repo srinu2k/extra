@@ -1,0 +1,70 @@
+<h1>Pakistan Railway Reservation System</h1>
+<ul>
+  <li style="float:right"><a class="img" routerLink="/adminlogin">Admin        </a></li>
+  <li style="float:right"><a class="img" routerLink="/reg"       >Register user</a></li>
+  <li><a class="img" routerLink="/userlogin" >User Login    </a></li>
+  <li><a class="img" routerLink="/schedule"  >Train Schedule</a></li>
+  <li><a class="img" routerLink="/contact"   >Contact       </a></li>
+</ul>
+  
+  <div class="float-container">
+  <div class="float-child">
+    <label>From</label>
+    <select type="select" (click)="search()" [(ngModel)]="text" class="form-control" name="text" >
+      <option></option>
+      <option *ngFor="let trai of trains">
+      {{trai.from}}
+    </option>
+    </select>
+    </div>
+    <div class="float-child">
+    <label>To</label>
+    <select type="select" (click)="search1()" [(ngModel)]="text1" class="form-control" name="text1" >
+      <option></option>
+      <option *ngFor="let trai of trains">
+      {{trai.to}}
+      </option>
+    </select>
+    </div>
+    </div>
+
+
+      <div class="cont1">
+<div class="zxy">
+<div class="generic-container">
+    <div class="panel panel-default">
+      <div class="row">
+       <h2>TRAINS LIST</h2>
+      </div>
+      <div class="panel-heading">
+      </div>
+      <div class="tablecontainer">
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>TRAIN NUMBER</th>
+            <th>TRAIN NAME</th>
+            <th>SOURCE STATION</th>
+            <th> DESTINATION STATION</th>
+            <th>FARE</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let trai of trains">
+            <td><span>{{trai.train_id}}</span></td>
+            <td><span>{{trai.train_name}}</span></td>
+            <td><span>{{trai.from}}</span></td>
+            <td><span>{{trai.to}}</span></td>
+            <td><span>{{trai.fare}}</span></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+

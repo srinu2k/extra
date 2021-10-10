@@ -1,0 +1,25 @@
+.aa{
+    
+  background-image: url(https://im.hunt.in/cg/hyderabad/City-Guide/Trains-to-bangalore.jpg);
+  padding: 250px;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+h1{
+  color:red;
+  padding-top: -100px;
+  text-align: center;
+}
+.img {
+  transition-duration: 0.4s;
+  padding: 10px;
+  margin: 16px;
+}
+
+.img:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+.ab{
+   text-align: center;
+}

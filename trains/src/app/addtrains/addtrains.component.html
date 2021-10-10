@@ -1,0 +1,52 @@
+<h1>Pakistan Railway Reservation System</h1>
+<ul>
+  <li><a class="img" routerLink="/admin">Back </a></li>
+  <li style="float:right"><a class="img" routerLink="/home"  >Logout     </a></li>
+</ul>
+
+
+<div class="aaa">
+<h3>Add Train Details</h3>
+<form [formGroup]="addResto" (ngSubmit)="collectResto()">
+    <div class="form-group">
+        <label >Train Number</label>
+        <input type="number" class="form-control" placeholder="Train Number" formControlName="train_id">
+        <div *ngIf="addResto.controls.train_id.touched && addResto.controls.train_id.errors" class="text-danger">
+            Please Enter Train number
+        </div> 
+    </div>
+    <div class="form-group">
+        <label >Train Name</label>
+        <input type="text" class="form-control" placeholder="Enter Name" formControlName="train_name">
+        <div *ngIf="addResto.controls.train_name.touched && addResto.controls.train_name.errors" class="text-danger">
+            Please Enter Train Name
+        </div> 
+    </div>
+    <div class="form-group">
+        <label >From</label>
+        <input type="text" class="form-control" placeholder="Enter From" formControlName="from">
+        <div *ngIf="addResto.controls.from.touched && addResto.controls.from.errors" class="text-danger">
+            Please Enter Station
+        </div> 
+    </div>
+    <div class="form-group">
+        <label >To</label>
+        <input type="text" class="form-control" placeholder="Enter To" formControlName="to">
+        <div *ngIf="addResto.controls.to.touched && addResto.controls.to.errors" class="text-danger">
+            Please Enter Station
+        </div> 
+    </div>
+    <div class="form-group">
+        <label >Fare</label>
+        <input type="number" class="form-control" placeholder="Enter Fare" formControlName="fare">
+        <div *ngIf="addResto.controls.fare.touched && addResto.controls.fare.errors" class="text-danger">
+            Please Enter Fare
+        </div> 
+    </div>
+    <br>
+    <div class="button">
+    <button type="submit" class="btn">Submit</button>
+    </div>
+    </form>
+    </div>
+    

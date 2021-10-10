@@ -1,0 +1,71 @@
+<h1>Pakistan Railway Reservation System</h1>
+<ul>
+  <li><a class="img" routerLink="/user">Back</a></li>
+</ul>
+
+
+<div class="all">
+<div class="container">
+  <div class="row">
+    <div id="custom-search-input">
+        <div class="input-grout col-md-12" style="text-align:center">
+          <input type="text" class="search-query form-control" placeholder="Enter PNR number" name="id" [(ngModel)]="id"/>
+          <span class="input-hroup-btn">
+           <button class="btn btn-danger" type="button" (click)="getbookbyid()">Get Ticket
+              <span class=" glyphicon glyphicon-search"></span>
+            </button>
+          </span>
+        </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+  <div class="table">
+<h2>Ticket Details</h2>
+<table class="table">
+  <tbody>
+  <tr>
+    <th>PNR NUMBER</th>
+    <th>PASSENGER NAME</th>
+    <th>AGE</th>
+    <th>GENDER</th>
+    <th>ADDRESS</th>
+    <th>E-MAIL</th>
+  </tr>
+  <tr *ngIf="bookingorder" >
+    <td><span>{{bookingorder.id}}</span></td>
+    <td><span>{{bookingorder.name}}</span></td>
+    <td><span>{{bookingorder.age}}</span></td>
+    <td><span>{{bookingorder.gender}}</span></td>
+    <td><span>{{bookingorder.address}}</span></td>
+    <td><span>{{bookingorder.email}}</span></td>
+  </tr>
+  <br>
+  <tr>
+    <th>SOURCE STATION</th>
+    <th>DESTINATION STATION</th>
+    <th>TRAVEL DATE</th>
+    <th>CLASS</th>
+    <th>CREDIT NUMBER</th>
+    <th>BANK NAME</th>
+  </tr>
+  
+  <tr *ngIf="bookingorder">
+    <td><span>{{bookingorder.startStation}}</span></td>
+    <td><span>{{bookingorder.endStation}}</span></td>
+    <td><span>{{bookingorder.date}}</span></td>
+    <td><span>{{bookingorder.berth}}</span></td>
+    <td><span>{{bookingorder.credit}}</span></td>
+    <td><span>{{bookingorder.bankname}}</span></td>
+  </tr>
+  </tbody>
+</table>
+<br>
+</div>
+<div class="cancelbutton">
+<a class="cde"><i (click)="deleteResto(bookingorder.id)"> CANCEL TICKET</i></a>
+</div>
+
+</div>

@@ -1,0 +1,68 @@
+
+h1{
+    color:red;
+    text-align: center;
+    background-color:darksalmon;
+}
+.img {
+    transition-duration: 0.4s;
+  }
+  
+  .img:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  .ab{
+     text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+  .row{
+      text-align: center;
+  }
+  
+  .float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+    background-image: url(https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Colorful-Geometric-Simple-Background-Image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 130px;
+  }
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}  
+label{
+  color: azure;
+}
+.cont1{
+  background-image: url(https://wallpaperaccess.com/full/1159285.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 150px;
+}

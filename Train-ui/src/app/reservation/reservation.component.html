@@ -1,0 +1,95 @@
+<h1>Pakistan Railway Reservation System</h1>
+<ul>
+  <li><a class="img" routerLink="/user">Back</a></li>
+  <li style="float:right"><a class="img" routerLink="/home">Logout</a></li>
+</ul>
+
+<div class="a">
+<h3>Reservation Form</h3>
+<div class="container">
+
+    <form [formGroup]="bookSeats" (ngSubmit)="collectTicks()">
+
+
+    <div class="float-container">
+    <div class="float-child">
+        <label >Name</label>
+        <input type="text" class="form-control" placeholder="Enter name" formControlName="name" >
+    </div>
+    <div class="float-child">
+        <label >Email</label>
+        <input type="email"    class="form-control" placeholder="Email"    formControlName="email" >
+    </div>
+    </div>
+
+
+    <div class="float-container">
+    <div class="float-child">
+        <label >age</label>
+        <input type="number"  class="form-control" placeholder="Enter age" formControlName="age" >
+    </div>
+    <div class="float-child">
+        <label >gender</label>
+        <input type="text" class="form-control" placeholder="gender" formControlName="gender" >
+    </div>
+    </div>
+
+
+    <div class="float-container">
+    <div class="float-child">
+        <label >address</label>
+        <input type="text" class="form-control" placeholder="address" formControlName="address" >
+    </div>
+    <div class="float-child">
+        <label >credit no</label>
+        <input type="number" class="form-control" placeholder="credit no" formControlName="credit" >
+    </div>
+    </div>
+        
+
+    <div class="float-container">
+    <div class="float-child">
+       <input type="text" [(ngModel)]="text" class="form-control" placeholder="SOURCE" name="text" formControlName="startStation">
+    <button type="submit" class="btn btn-default" (click)="search()">Submit</button>
+    </div>
+    <div class="float-child">
+      <input type="text" [(ngModel)]="text1" class="form-control" placeholder="DESTINATION" name="text1" formControlName="endStation">
+      <button type="submit" class="btn btn-default" (click)="search1()" >Submit</button>
+    </div>
+    </div>
+
+
+    <div class="float-container">
+    <div class="float-child">
+        <label >Quantity</label>
+        <input type="number" class="form-control" placeholder="Enter seats" formControlName="quantity"  required>
+    </div>
+    <div class="float-child">
+        <label >date</label>
+        <input type="date" class="form-control"  formControlName="date" >
+    </div>
+    </div>
+    
+
+
+    <div class="float-container">
+    <div class="float-child">
+        <label >bankname</label>
+        <input type="text" class="form-control" placeholder="Bank name" formControlName="bankname" >
+    </div>
+    <div class="float-child">
+        <label >berth</label>
+        <input type="text" class="form-control" placeholder="berth" formControlName="berth" >
+    </div>
+    </div>
+
+ 
+    <div class="submit-button1">
+    <button class="button-1" type="submit">Submit</button>
+    </div>
+
+    </form>
+
+</div>
+</div>
+    

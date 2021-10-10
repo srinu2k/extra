@@ -1,0 +1,35 @@
+<h1>Pakistan Railway Reservation System</h1>
+<ul>
+  <li style="float:right"><a class="img" routerLink="/home">Logout</a></li>
+</ul>
+
+
+
+<div class="bbb">
+  <div class="eee">
+  <table class="ccc">
+    <thead>
+      <th> Ticket PNR Number Is:  </th>
+    </thead>
+    <br>
+    <tbody >
+      <tr *ngFor="let trai of train; let i=index">
+        <td *ngIf ="i>=train.length -1">{{trai.id}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+<div class="ggg">
+  <button class="ddd" routerLink="/user">Return To User Home</button>
+  <button class="ddd" title="Print Screen" alt="Print Screen" onclick="window.print();"    target="_blank" style="cursor:pointer;">Click Here To Print Ticket!</button>
+  </div>
+
+
+  
+</div>]
+
+
+
+
+

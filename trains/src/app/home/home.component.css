@@ -1,0 +1,61 @@
+
+h1{
+    color:red;
+    text-align: center;
+    background-color:darksalmon;
+}
+.img {
+    transition-duration: 0.4s;
+  }
+  
+  .img:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  .ab{
+     text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+  
+
+
+  .maindiv{
+    width: 98%;
+    height: 470px;
+    position: absolute;
+     left: 50%;
+     top: 60%;
+     transform: translate(-50%, -50%);
+     background-image:url(https://img.mobygeek.com/2021/02/01/pamban-bridge-7de0.jpg);
+     background-size: 100% 100%;
+     box-shadow:1px 2px 10px honeydew;
+     animation:slider 5s infinite linear;
+  }
+  @keyframes slider{
+    0%{background-image:url(https://img.mobygeek.com/2021/02/01/pamban-bridge-7de0.jpg);}
+    50%{ background-image:url(https://img2.fonwall.ru/o/fn/train-mountains-snow.jpg?route=mid&h=750);}
+    100%{ background-image:url(https://images.unsplash.com/photo-1541427468627-a89a96e5ca1d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80);}
+  }

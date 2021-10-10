@@ -1,0 +1,15 @@
+{
+    "/Admin/**": {
+      "target": "http://localhost:20003",
+      "secure": false,
+      "logLevel": "debug"
+  
+    },
+    "/booki/**": {
+      "target": "http://localhost:20003",
+      "secure": false,
+      "logLevel": "debug"
+  
+    }
+    
+  }

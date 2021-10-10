@@ -1,0 +1,82 @@
+.aa{
+    
+    background-image: url(https://im.hunt.in/cg/hyderabad/City-Guide/Trains-to-bangalore.jpg);
+    padding: 250px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+h1{
+    color:red;
+    text-align: center;
+    background-color:darksalmon;
+}
+.img {
+    transition-duration: 0.4s;
+  }
+  
+  .img:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  .ab{
+     text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+  h2{
+      text-align: center;
+      background-color: cornsilk;
+      color: crimson;
+  }
+  h3{
+      text-align: center;
+      color: whitesmoke;  
+    }
+
+
+  .backimage{
+    background-image: url(https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171__480.jpg);
+  padding-bottom: 200px;
+  padding-top: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  .tab{
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .button{
+    text-align: center;
+  }
+  .btn{
+    background-color:rgb(42, 169, 228);
+  }
+  .form-group{
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  label{
+    color: honeydew;
+  }

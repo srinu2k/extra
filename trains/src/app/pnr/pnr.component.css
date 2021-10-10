@@ -1,0 +1,74 @@
+h1{
+  color:red;
+  text-align: center;
+  background-color:darksalmon;
+}
+.img {
+  transition-duration: 0.4s;
+}
+
+.img:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+.ab{
+   text-align: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+h2{
+    text-align: center;
+    background-color: cornsilk;
+    color: crimson;
+}
+
+
+.bbb{
+    padding: 200px;
+    background-image: url(https://www.klaviyo.com/wp-content/uploads/2016/09/abstract-background-1024x273.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ccc{
+  border: 2px solid ;
+  text-align: center;
+  background-color:darksalmon;
+}
+
+.ddd{
+  background-color: cornsilk;
+  padding: 20px;
+  
+}
+.ddd:hover{
+  background-color: rgb(240, 236, 10);
+}
+.eee{
+  text-align: center;
+  padding-left: 320px;
+}
+.ggg{
+  text-align: center;
+}

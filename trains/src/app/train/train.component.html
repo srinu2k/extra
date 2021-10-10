@@ -1,0 +1,41 @@
+<h1>Pakistan Railway Reservation System</h1>
+<ul>
+  <li><a class="img" routerLink="/admin">Back </a></li>
+  <li style="float:right"><a class="img" routerLink="/home"  >Logout     </a></li>
+</ul>
+
+<div class="ggg">
+<div class="generic-container">
+    <div class="panel panel-default">
+      <div class="row">
+       <h2>List of Trains</h2>
+      </div>
+      <div class="tablecontainer">
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>Train Number</th>
+            <th>Train Name</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Fare</th>
+            <th>Operations</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let trai of trains">
+            <td><span>{{trai.train_id}}</span></td>
+            <td><span>{{trai.train_name}}</span></td>
+            <td><span>{{trai.from}}</span></td>
+            <td><span>{{trai.to}}</span></td>
+            <td><span>{{trai.fare}}</span></td>
+            <th><a class="ac" (click)="deleteResto(trai.train_id)">Delete</a><br>
+              <a class="ad"   routerLink="/update/{{trai.train_id}}">Update </a>
+              </th>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
